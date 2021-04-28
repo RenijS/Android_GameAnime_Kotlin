@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".AnimeQuiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wh"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="@string/imagequestion" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="4"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:text="@string/_0_4" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:text="@string/option1"
+            android:textAlignment="center"
+            android:textColor="#959595"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvOption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:text="@string/option2"
+            android:textAlignment="center"
+            android:textColor="#959595"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvOption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:text="@string/option3"
+            android:textAlignment="center"
+            android:textColor="#959595"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvOption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/rounded_edittext"
+            android:padding="10dp"
+            android:text="@string/option4"
+            android:textAlignment="center"
+            android:textColor="#959595"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonAnsSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textSize="22sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"/>
+    </LinearLayout>
+</ScrollView>
